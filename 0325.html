@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼(form)예제</title>
+</head>
+<body>
+    <h1>로그인</h1>
+    <form>
+        <table border="1">
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="id"></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+               <td><input type="password" name="pw"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="로그인">
+                    <input type="reset" value="최 소">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <h1>로그인 폼</h1>
+    <hr>
+    <form name="f1" method="post" action="">
+        사용자 ID:
+        <input type="text" size="15" name="id"><br>
+        비밀 번호:
+        <input type="password" size="15 " name="pw">
+        <input type="submit" value="완료"><br>
+        기타 내용:
+        <textarea cols="15" rows="5"></textarea>
+        <input type="submit" value="완료">
+    </form>
+    <h2>체크박스 중복선택 가능</h2>
+    <hr>
+    <form>
+        짜장면<input type="checkbox" value="짜장면">
+        <input type="checkbox" value="짬뽕">짬뽕
+        <input type="checkbox" value="탕수육">탕수육
+        <input type="checkbox" value="군만두" checked>군만두
+    </form>
+    <h2>라디오 버튼 하나만 선택</h2>
+    <form>
+        <input type="radio" name="smc" value="1" checked>스마트 보안 솔루션과<br>
+        <input type="radio" name="smc" value="2">모빌리티메니커과<br>
+        <input type="radio" name="smc" value="3">인공지능소프트워어과<br>
+        <input type="radio" name="smc" value="4">게임소프트워어과
+    </form>
+    <h2>선텍상자 그롭다운</h2>
+    <hr>
+        <select name="sprots">
+            <option>스포츠 선택</option>
+            <option value="야구">야구</option>
+            <option value="농구">농구</option>
+            <option value="축구" selected>축구</option>
+            <option value="배구">배구</option>
+        </select>
+    <h2>데이터 목록 리스트</h2>
+    <hr>
+    <input type="text" list="countries">
+    <datalist id="countries">
+        <option value="일본">일본</option>
+        <option value="일본">일본</option>
+        <option value="일본">일본</option
+    </datalist>
+</body>
+</html>
